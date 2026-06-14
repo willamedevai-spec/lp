@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Primary -->
+  <title>Willame Silva | Desenvolvedor Full Stack & Especialista em IA</title>
+  <meta name="description" content="Desenvolvedor Full Stack especializado em Python, Django, JavaScript, Inteligência Artificial e Automações. Transformo ideias em soluções digitais inteligentes para empresas que desejam crescer." />
+  <meta name="keywords" content="desenvolvedor full stack, python, django, javascript, inteligência artificial, automação, desenvolvimento web, landing page, sistema web, API, Fortaleza, Brasil" />
+  <meta name="author" content="Willame Silva" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://willamesilva.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://willamesilva.dev/" />
+  <meta property="og:title" content="Willame Silva | Desenvolvedor Full Stack & Especialista em IA" />
+  <meta property="og:description" content="Transformo ideias em soluções digitais inteligentes. Desenvolvimento Web, Inteligência Artificial, Automações e Aplicações para empresas que desejam crescer." />
+  <meta property="og:image" content="https://willamesilva.dev/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Willame Silva Dev" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://willamesilva.dev/" />
+  <meta name="twitter:title" content="Willame Silva | Desenvolvedor Full Stack & Especialista em IA" />
+  <meta name="twitter:description" content="Transformo ideias em soluções digitais inteligentes. Desenvolvimento Web, IA e Automações." />
+  <meta name="twitter:image" content="https://willamesilva.dev/og-image.jpg" />
+
+  <!-- Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Willame Silva",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "url": "https://willamesilva.dev/",
+    "sameAs": [
+      "https://www.instagram.com/willamepianco",
+      "https://www.linkedin.com/in/willame-silva-6b1ab4408",
+      "https://wa.me/5585989131725"
+    ],
+    "knowsAbout": ["Python", "Django", "JavaScript", "HTML5", "CSS3", "Inteligência Artificial", "Automação", "MySQL", "APIs"]
+  }
+  </script>
+
+  <!-- JSON-LD: Professional Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Willame Silva Dev",
+    "description": "Desenvolvimento Web, Inteligência Artificial, Automações e Aplicações personalizadas",
+    "url": "https://willamesilva.dev/",
+    "telephone": "+5585989131725",
+    "areaServed": "BR",
+    "serviceType": ["Desenvolvimento Web", "Automação", "Inteligência Artificial", "Landing Pages", "Sistemas Web"]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quais tecnologias você domina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Domino Python, Django, JavaScript, HTML5, CSS3, MySQL, APIs REST e automações com IA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como solicitar um orçamento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Você pode entrar em contato pelo WhatsApp (85) 98913-1725 ou preencher o formulário de contato no site."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+  <header class="header" id="header" role="banner">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="Willame Silva - Início">
+        <span class="logo__bracket">&lt;</span>
+        <span class="logo__name">WS</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/5585989131725?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm header__cta">
+        Solicitar Orçamento
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu mobile">
+      <ul class="mobile-menu__list">
+        <li><a href="#servicos" class="mobile-menu__link">Serviços</a></li>
+        <li><a href="#sobre" class="mobile-menu__link">Sobre</a></li>
+        <li><a href="#portfolio" class="mobile-menu__link">Portfólio</a></li>
+        <li><a href="#contato" class="mobile-menu__link">Contato</a></li>
+        <li>
+          <a href="https://wa.me/5585989131725?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--full">
+            Solicitar Orçamento
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- Aurora Background -->
+      <div class="aurora" aria-hidden="true">
+        <div class="aurora__orb aurora__orb--1"></div>
+        <div class="aurora__orb aurora__orb--2"></div>
+        <div class="aurora__orb aurora__orb--3"></div>
+      </div>
+
+      <!-- Grid Lines -->
+      <div class="grid-overlay" aria-hidden="true"></div>
+
+      <!-- Floating particles -->
+      <div class="particles" aria-hidden="true" id="particles"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <div class="hero__badge">
+            <span class="badge__dot"></span>
+            Disponível para novos projetos
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            Transformo ideias em
+            <span class="gradient-text">soluções digitais</span>
+            inteligentes.
+          </h1>
+
+          <p class="hero__subtitle">
+            Desenvolvimento Web, Back-end em Python, Inteligência Artificial, Automações e Aplicações
+            para empresas que desejam crescer.
+          </p>
+
+          <div class="hero__actions">
+            <a href="https://wa.me/5585989131725?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.528 5.837L0 24l6.335-1.507A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.662-.516-5.178-1.408l-.37-.22-3.763.895.937-3.667-.24-.384A9.973 9.973 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Solicitar Orçamento
+            </a>
+            <a href="#portfolio" class="btn btn--ghost btn--lg">
+              Ver Projetos
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <!-- <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number" data-target="10">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Projetos Entregues</span>
+            </div>
+            <div class="stat__divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat__number" data-target="30">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Clientes Atendidos</span>
+            </div>
+            <div class="stat__divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat__number" data-target="12">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Tecnologias Dominadas</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Avatar / Visual -->
+        <div class="hero__visual reveal reveal--delay-2">
+          <div class="avatar-container">
+            <div class="avatar-ring avatar-ring--outer"></div>
+            <div class="avatar-ring avatar-ring--inner"></div>
+            <div class="avatar-core">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Avatar tecnológico de Willame Silva" role="img">
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#3b82f6"/>
+                    <stop offset="100%" stop-color="#1d4ed8"/>
+                  </linearGradient>
+                  <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#60a5fa"/>
+                    <stop offset="100%" stop-color="#93c5fd"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="90" fill="url(#avatarGrad)" opacity="0.15" stroke="url(#codeGrad)" stroke-width="1"/>
+                <!-- Code Icon -->
+                <text x="100" y="115" text-anchor="middle" font-family="monospace" font-size="64" fill="url(#codeGrad)" opacity="0.9">&lt;/&gt;</text>
+              </svg>
+            </div>
+            <!-- Floating tech badges -->
+            <div class="float-badge float-badge--1">Python</div>
+            <div class="float-badge float-badge--2">Django</div>
+            <div class="float-badge float-badge--3">JS</div>
+            <div class="float-badge float-badge--4">AI</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-indicator__mouse">
+          <div class="scroll-indicator__dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ SOBRE MIM ════════════════════════════ -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Sobre Mim</span>
+          <h2 class="section-title" id="sobre-title">Código com propósito,<br>resultado com impacto.</h2>
+          <p class="section-desc">Desenvolvedor Full Stack especializado em Python, automações e soluções com Inteligência Artificial.
+        </div>
+
+        <div class="sobre__grid">
+          <div class="sobre__text reveal">
+            <p class="sobre__paragraph">
+              Sou <strong>Willame Silva</strong>, Desenvolvedor Full Stack com foco em criar soluções digitais que geram resultados reais. Combino domínio técnico com visão estratégica para transformar desafios empresariais em produtos digitais de alta performance.
+            </p>
+            <p class="sobre__paragraph">
+              Especialista em <strong>Python</strong> e <strong>Django</strong> para back-end robusto, <strong>JavaScript</strong> para experiências interativas no front-end e integração com <strong>Inteligência Artificial</strong> e automações que otimizam processos e aumentam a produtividade.
+            </p>
+            <p class="sobre__paragraph">
+              Cada projeto é tratado como um produto estratégico: da arquitetura ao deploy, com atenção obsessiva à qualidade, performance e experiência do usuário.
+            </p>
+
+            <div class="sobre__differentials">
+              <div class="differential">
+                <div class="differential__icon">⚡</div>
+                <div>
+                  <strong>Entrega Rápida</strong>
+                  <p>Projetos no prazo, sem abrir mão da qualidade</p>
+                </div>
+              </div>
+              <div class="differential">
+                <div class="differential__icon">🔒</div>
+                <div>
+                  <strong>Código Seguro</strong>
+                  <p>Boas práticas e padrões de segurança modernos</p>
+                </div>
+              </div>
+              <div class="differential">
+                <div class="differential__icon">📈</div>
+                <div>
+                  <strong>Foco em Resultado</strong>
+                  <p>Soluções orientadas a métricas e crescimento</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline reveal reveal--delay-1">
+            <h3 class="timeline__title">Trajetória Profissional</h3>
+            <ol class="timeline__list">
+              <li class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                  <!-- <span class="timeline__year">2026 — Atual</span> -->
+                  <!-- <strong class="timeline__role">Desenvolvedor Full Stack & Especialista em IA</strong> -->
+                  <!-- <p class="timeline__desc">Projetos de automação com IA, sistemas web e landing pages de alta conversão.</p> -->
+                </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                  <span class="timeline__year">2024 — 2026</span>
+                  <strong class="timeline__role">Desenvolvedor Back-End Python/Django</strong>
+                  <p class="timeline__desc">Construção de APIs REST, sistemas de gerenciamento e integrações complexas.</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div class="timeline__content">
+                  <span class="timeline__year">2024 — 2026</span>
+                  <strong class="timeline__role">Desenvolvedor Front-End</strong>
+                  <p class="timeline__desc">Criação de interfaces responsivas e experiências de usuário com HTML, CSS e JavaScript.</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__dot timeline__dot--first"></div>
+                <div class="timeline__content">
+                  <span class="timeline__year">2024</span>
+                  <strong class="timeline__role">Início na Programação</strong>
+                  <p class="timeline__desc">Primeiros projetos com Python e automações. A paixão por código começou aqui.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ STACK ═══════════════════════════════ -->
+    <section class="stack" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Stack Tecnológica</span>
+          <h2 class="section-title" id="stack-title">Ferramentas que dominam<br>o ecossistema digital.</h2>
+        </div>
+
+        <div class="stack__grid">
+
+          <article class="tech-card reveal" style="--glow:#3b82f6">
+            <div class="tech-card__icon">🐍</div>
+            <h3 class="tech-card__name">Python</h3>
+            <p class="tech-card__desc">Automações, back-end e scripts inteligentes</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:95%"></div></div>
+          </article>
+
+          <article class="tech-card reveal reveal--delay-1" style="--glow:#10b981">
+            <div class="tech-card__icon">🦄</div>
+            <h3 class="tech-card__name">Django</h3>
+            <p class="tech-card__desc">Framework web robusto e escalável</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:90%"></div></div>
+          </article>
+
+          <article class="tech-card reveal reveal--delay-2" style="--glow:#f59e0b">
+            <div class="tech-card__icon">⚡</div>
+            <h3 class="tech-card__name">JavaScript</h3>
+            <p class="tech-card__desc">Interatividade, animações e lógica client-side</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:88%"></div></div>
+          </article>
+
+          <article class="tech-card reveal" style="--glow:#ef4444">
+            <div class="tech-card__icon">🌐</div>
+            <h3 class="tech-card__name">HTML5</h3>
+            <p class="tech-card__desc">Estrutura semântica e acessível</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:98%"></div></div>
+          </article>
+
+          <article class="tech-card reveal reveal--delay-1" style="--glow:#8b5cf6">
+            <div class="tech-card__icon">🎨</div>
+            <h3 class="tech-card__name">CSS3</h3>
+            <p class="tech-card__desc">Animações, layouts e design responsivo</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:95%"></div></div>
+          </article>
+
+          <article class="tech-card reveal reveal--delay-2" style="--glow:#06b6d4">
+            <div class="tech-card__icon">🗄️</div>
+            <h3 class="tech-card__name">MySQL</h3>
+            <p class="tech-card__desc">Banco de dados relacional e consultas otimizadas</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:85%"></div></div>
+          </article>
+
+          <article class="tech-card reveal" style="--glow:#ec4899">
+            <div class="tech-card__icon">🔗</div>
+            <h3 class="tech-card__name">APIs REST</h3>
+            <p class="tech-card__desc">Integração e consumo de serviços externos</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:92%"></div></div>
+          </article>
+
+          <article class="tech-card reveal reveal--delay-1" style="--glow:#3b82f6">
+            <div class="tech-card__icon">🤖</div>
+            <h3 class="tech-card__name">IA & Automações</h3>
+            <p class="tech-card__desc">Fluxos inteligentes e integração com LLMs</p>
+            <div class="tech-card__bar"><div class="tech-card__fill" style="--pct:87%"></div></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SERVIÇOS ════════════════════════════ -->
+    <section class="servicos" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Serviços</span>
+          <h2 class="section-title" id="servicos-title">Soluções digitais que<br>impulsionam seu negócio.</h2>
+          <p class="section-desc">Do conceito à entrega, cada solução é construída com precisão técnica e visão estratégica.</p>
+        </div>
+
+        <div class="servicos__grid">
+
+          <article class="service-card reveal">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="service-card__title">Desenvolvimento Web</h3>
+            <p class="service-card__desc">Criação de sites e sistemas web modernos, rápidos e com alta conversão.</p>
+            <ul class="service-card__list">
+              <li>Sites Institucionais</li>
+              <li>Landing Pages Premium</li>
+              <li>Sistemas Web Complexos</li>
+              <li>Aplicações Personalizadas</li>
+            </ul>
+            <a href="https://wa.me/5585989131725?text=Olá!%20Tenho%20interesse%20em%20Desenvolvimento%20Web." target="_blank" rel="noopener noreferrer" class="service-card__btn">Saiba Mais →</a>
+          </article>
+
+          <article class="service-card reveal reveal--delay-1">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-card__title">Inteligência Artificial</h3>
+            <p class="service-card__desc">Integração de IA generativa para automatizar processos e criar experiências inteligentes.</p>
+            <ul class="service-card__list">
+              <li>Chatbots com LLMs</li>
+              <li>Análise de Dados com IA</li>
+              <li>Geração de Conteúdo</li>
+              <li>Assistentes Virtuais</li>
+            </ul>
+            <a href="https://wa.me/5585989131725?text=Olá!%20Tenho%20interesse%20em%20Inteligência%20Artificial." target="_blank" rel="noopener noreferrer" class="service-card__btn">Saiba Mais →</a>
+          </article>
+
+          <article class="service-card reveal reveal--delay-2">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="service-card__title">Automações</h3>
+            <p class="service-card__desc">Automatize tarefas repetitivas e integre sistemas para ganhar produtividade.</p>
+            <ul class="service-card__list">
+              <li>WhatsApp Business API</li>
+              <li>Processos Empresariais</li>
+              <li>Integrações via API</li>
+              <li>Fluxos de Trabalho</li>
+            </ul>
+            <a href="https://wa.me/5585989131725?text=Olá!%20Tenho%20interesse%20em%20Automações." target="_blank" rel="noopener noreferrer" class="service-card__btn">Saiba Mais →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__glow" aria-hidden="true"></div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+            </div>
+            <h3 class="service-card__title">APIs & Integrações</h3>
+            <p class="service-card__desc">Desenvolvimento e integração de APIs REST para conectar seus sistemas.</p>
+            <ul class="service-card__list">
+              <li>APIs RESTful</li>
+              <li>Webhooks</li>
+              <li>Integrações de Pagamento</li>
+              <li>Sincronização de Dados</li>
+            </ul>
+            <a href="https://wa.me/5585989131725?text=Olá!%20Tenho%20interesse%20em%20APIs%20e%20Integrações." target="_blank" rel="noopener noreferrer" class="service-card__btn">Saiba Mais →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PORTFÓLIO ════════════════════════════ -->
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfólio</span>
+          <h2 class="section-title" id="portfolio-title">Projetos que falam<br>por si mesmos.</h2>
+          <p class="section-desc">Cada projeto é uma solução real para um problema real.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="portfolio__filters reveal" role="tablist" aria-label="Filtrar projetos">
+          <button class="filter-btn filter-btn--active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Desenvolvimento Web</button>
+          <button class="filter-btn" data-filter="ia" role="tab" aria-selected="false">Inteligência Artificial</button>
+          <button class="filter-btn" data-filter="automacao" role="tab" aria-selected="false">Automações</button>
+        </div>
+
+        <div class="portfolio__grid" id="portfolio-grid">
+
+          <article class="project-card" data-category="web">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" aria-hidden="true">🛒</div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="tag">Django</span><span class="tag">Python</span><span class="tag">MySQL</span>
+              </div>
+              <h3 class="project-card__title">Sistema E-commerce B2B</h3>
+              <p class="project-card__desc">Plataforma completa de vendas com painel administrativo, gestão de estoque e relatórios em tempo real.</p>
+              <a href="https://wa.me/5585989131725?text=Olá!%20Vi%20o%20projeto%20E-commerce%20no%20seu%20portfólio." target="_blank" rel="noopener noreferrer" class="project-card__link">Ver Projeto →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ia">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" aria-hidden="true">🤖</div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="tag">Python</span><span class="tag">OpenAI</span><span class="tag">API</span>
+              </div>
+              <h3 class="project-card__title">Chatbot de Atendimento com IA</h3>
+              <p class="project-card__desc">Assistente virtual inteligente integrado ao WhatsApp para atendimento 24/7 com resposta em linguagem natural.</p>
+              <a href="https://wa.me/5585989131725?text=Olá!%20Vi%20o%20projeto%20Chatbot%20no%20seu%20portfólio." target="_blank" rel="noopener noreferrer" class="project-card__link">Ver Projeto →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="automacao">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" aria-hidden="true">⚡</div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="tag">Python</span><span class="tag">WhatsApp</span><span class="tag">Automação</span>
+              </div>
+              <h3 class="project-card__title">Automação de Vendas WhatsApp</h3>
+              <p class="project-card__desc">Sistema de disparo e qualificação de leads via WhatsApp com follow-up automático e CRM integrado.</p>
+              <a href="https://wa.me/5585989131725?text=Olá!%20Vi%20o%20projeto%20Automação%20no%20seu%20portfólio." target="_blank" rel="noopener noreferrer" class="project-card__link">Ver Projeto →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" aria-hidden="true">🏢</div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JS</span>
+              </div>
+              <h3 class="project-card__title">Landing Page Institucional</h3>
+              <p class="project-card__desc">Landing page de alta conversão com animações premium, SEO otimizado e integração com WhatsApp Business.</p>
+              <a href="https://wa.me/5585989131725?text=Olá!%20Vi%20a%20Landing%20Page%20no%20seu%20portfólio." target="_blank" rel="noopener noreferrer" class="project-card__link">Ver Projeto →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ia">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" aria-hidden="true">📊</div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="tag">Python</span><span class="tag">IA</span><span class="tag">Dashboard</span>
+              </div>
+              <h3 class="project-card__title">Dashboard de Analytics com IA</h3>
+              <p class="project-card__desc">Painel de análise de dados com insights gerados por inteligência artificial e visualizações interativas.</p>
+              <a href="https://wa.me/5585989131725?text=Olá!%20Vi%20o%20Dashboard%20no%20seu%20portfólio." target="_blank" rel="noopener noreferrer" class="project-card__link">Ver Projeto →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="automacao">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" aria-hidden="true">🔄</div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="tag">Python</span><span class="tag">APIs</span><span class="tag">Integração</span>
+              </div>
+              <h3 class="project-card__title">Integração Multi-plataforma</h3>
+              <p class="project-card__desc">Automação de fluxo de dados entre ERP, CRM e marketplace com sincronização em tempo real.</p>
+              <a href="https://wa.me/5585989131725?text=Olá!%20Vi%20a%20Integração%20no%20seu%20portfólio." target="_blank" rel="noopener noreferrer" class="project-card__link">Ver Projeto →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ BLOG ════════════════════════════════ -->
+    <!-- <section class="blog" id="blog" aria-labelledby="blog-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Blog</span>
+          <h2 class="section-title" id="blog-title">Conteúdo que inspira<br>e educa.</h2>
+          <p class="section-desc">Artigos sobre tecnologia, marketing digital e inteligência artificial.</p>
+        </div> -->
+
+        <!-- Blog Filters -->
+        <!-- <div class="blog__filters reveal">
+          <button class="blog-filter blog-filter--active" data-blog-filter="all">Todos</button>
+          <button class="blog-filter" data-blog-filter="ia">Inteligência Artificial</button>
+          <button class="blog-filter" data-blog-filter="marketing">Marketing Digital</button>
+          <button class="blog-filter" data-blog-filter="google">Google</button>
+          <button class="blog-filter" data-blog-filter="redes">Redes Sociais</button>
+        </div>
+
+        <div class="blog__grid">
+
+          <article class="blog-card reveal" data-blog-category="ia">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" aria-hidden="true">🧠</div>
+              <span class="blog-card__category">Inteligência Artificial</span>
+            </div>
+            <div class="blog-card__body">
+              <time class="blog-card__date" datetime="2026-05-15">15 Mai 2026</time>
+              <h3 class="blog-card__title">Como a IA Generativa está transformando o desenvolvimento web</h3>
+              <p class="blog-card__excerpt">Descubra como ferramentas de IA estão acelerando o desenvolvimento e criando novas possibilidades para desenvolvedores e empresas.</p>
+              <a href="#" class="blog-card__link">Ler Mais →</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal reveal--delay-1" data-blog-category="marketing">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" aria-hidden="true">📱</div>
+              <span class="blog-card__category">Marketing Digital</span>
+            </div>
+            <div class="blog-card__body">
+              <time class="blog-card__date" datetime="2026-05-10">10 Mai 2026</time>
+              <h3 class="blog-card__title">Landing Pages de Alta Conversão: O que funciona em 2026</h3>
+              <p class="blog-card__excerpt">As melhores práticas para criar landing pages que convertem visitantes em clientes com técnicas modernas de CRO e design.</p>
+              <a href="#" class="blog-card__link">Ler Mais →</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal reveal--delay-2" data-blog-category="google">
+            <div class="blog-card__image">
+              <div class="blog-card__placeholder" aria-hidden="true">🔍</div>
+              <span class="blog-card__category">Google</span>
+            </div>
+            <div class="blog-card__body">
+              <time class="blog-card__date" datetime="2026-05-05">05 Mai 2026</time>
+              <h3 class="blog-card__title">SEO em 2026: Como rankear com IA e dados estruturados</h3>
+              <p class="blog-card__excerpt">Estratégias de SEO atualizadas para dominar os resultados do Google e os mecanismos de busca com IA generativa.</p>
+              <a href="#" class="blog-card__link">Ler Mais →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="blog__cta reveal">
+          <p>Em breve, mais conteúdos exclusivos sobre tecnologia e inovação.</p>
+          <a href="https://www.instagram.com/willamepianco" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+            Seguir no Instagram →
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ═══════════════════════════ CONTATO ══════════════════════════════ -->
+    <section class="contato" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title" id="contato-title">Vamos construir algo<br>extraordinário juntos?</h2>
+          <p class="section-desc">Entre em contato e receba uma proposta personalizada.</p>
+        </div>
+
+        <div class="contato__grid">
+
+          <!-- Contact Form -->
+          <div class="contato__form-wrapper reveal">
+            <div class="glass-card">
+              <h3 class="form-title">Enviar Mensagem</h3>
+              <div class="form" id="contact-form" novalidate>
+                <div class="form__group">
+                  <label class="form__label" for="nome">Nome Completo *</label>
+                  <input class="form__input" type="text" id="nome" name="nome" placeholder="Seu nome completo" required autocomplete="name" />
+                  <span class="form__error" id="nome-error" role="alert"></span>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="email">E-mail *</label>
+                  <input class="form__input" type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+                  <span class="form__error" id="email-error" role="alert"></span>
+                </div>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="telefone">Telefone</label>
+                    <input class="form__input" type="tel" id="telefone" name="telefone" placeholder="(85) 99999-9999" autocomplete="tel" />
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="empresa">Empresa</label>
+                    <input class="form__input" type="text" id="empresa" name="empresa" placeholder="Nome da empresa" autocomplete="organization" />
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="mensagem">Mensagem *</label>
+                  <textarea class="form__input form__textarea" id="mensagem" name="mensagem" rows="5" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
+                  <span class="form__error" id="mensagem-error" role="alert"></span>
+                </div>
+                <button type="button" id="form-submit" class="btn btn--primary btn--full btn--lg">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+                  Enviar Mensagem
+                </button>
+              </div>
+
+              <!-- Success message -->
+              <div class="form__success" id="form-success" aria-live="polite" hidden>
+                <div class="success-icon">✅</div>
+                <h4>Mensagem enviada!</h4>
+                <p>Obrigado pelo contato. Responderei em breve pelo WhatsApp ou e-mail.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contato__info reveal reveal--delay-1">
+            <h3 class="contato__info-title">Informações de Contato</h3>
+
+            <div class="contact-links">
+              <a href="https://wa.me/5585989131725?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="contact-link contact-link--whatsapp">
+                <div class="contact-link__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.528 5.837L0 24l6.335-1.507A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.662-.516-5.178-1.408l-.37-.22-3.763.895.937-3.667-.24-.384A9.973 9.973 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link__label">WhatsApp</span>
+                  <span class="contact-link__value">(85) 98913-1725</span>
+                </div>
+              </a>
+
+              <a href="https://www.instagram.com/willamepianco" target="_blank" rel="noopener noreferrer" class="contact-link contact-link--instagram">
+                <div class="contact-link__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link__label">Instagram</span>
+                  <span class="contact-link__value">@willamepianco</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/willame-silva-6b1ab4408" target="_blank" rel="noopener noreferrer" class="contact-link contact-link--linkedin">
+                <div class="contact-link__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link__label">LinkedIn</span>
+                  <span class="contact-link__value">Willame Silva</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/willamedevai-spec" target="_blank" rel="noopener noreferrer" class="contact-link contact-link--github">
+                <div class="contact-link__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link__label">GitHub</span>
+                  <span class="contact-link__value">Willame Silva</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- WhatsApp CTA -->
+            <a href="https://wa.me/5585989131725?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--full btn--lg" style="margin-top:2rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.528 5.837L0 24l6.335-1.507A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.662-.516-5.178-1.408l-.37-.22-3.763.895.937-3.667-.24-.384A9.973 9.973 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Chamar no WhatsApp Agora
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo" aria-label="Willame Silva - Voltar ao topo">
+          <span class="logo__bracket">&lt;</span>
+          <span class="logo__name">WS</span>
+          <span class="logo__bracket">/&gt;</span>
+        </a>
+        <p class="footer__tagline">Transformando ideias em soluções digitais inteligentes.</p>
+        <div class="footer__socials">
+          <a href="https://wa.me/5585989131725" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.528 5.837L0 24l6.335-1.507A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.662-.516-5.178-1.408l-.37-.22-3.763.895.937-3.667-.24-.384A9.973 9.973 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/willamepianco" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/willame-silva-6b1ab4408" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/willamedevai-spec" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Menu rodapé">
+        <div class="footer__nav-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <!-- <li><a href="#blog">Blog</a></li> -->
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Desenvolvimento Web</a></li>
+            <li><a href="#servicos">Inteligência Artificial</a></li>
+            <li><a href="#servicos">Automações</a></li>
+            <li><a href="#servicos">APIs & Integrações</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2026 <strong>Willame Silva</strong>. Todos os direitos reservados.</p>
+        <p>Desenvolvido com Python, café e a vontade constante de criar algo melhor a cada dia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5585989131725?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.528 5.837L0 24l6.335-1.507A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.662-.516-5.178-1.408l-.37-.22-3.763.895.937-3.667-.24-.384A9.973 9.973 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+  </a>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
